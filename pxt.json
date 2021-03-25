@@ -6,12 +6,10 @@
         "device": "*"
     },
     "files": [
-        "main.ts",
-        "assets.json"
+        "assets.json",
+        "camera.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "target": "1.4.28",
         "targetId": "arcade"

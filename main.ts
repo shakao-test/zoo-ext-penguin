@@ -14,14 +14,3 @@ __camera.setFlag(SpriteFlag.Ghost, true)
 __camera.setFlag(SpriteFlag.StayInScreen, true)
 scene.cameraFollowSprite(__camera)
 
-
-let won = false
-scene.onOverlapTile(SpriteKind.Penguin, assets.tile`tile`, function (sprite, location) {
-    if (!(won)) {
-        won = true
-        control.runInParallel(function() { 
-            pause(1500)
-            game.over(true)
-        })
-    }
-})
